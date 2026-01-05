@@ -1,20 +1,23 @@
 /* RESET */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* BODY */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
 }
 
-/* WRAPPER UTAMA */
+/* WRAPPER */
 .wrapper {
   width: 100%;
   max-width: 420px;
+  text-align: center;
   margin: 0 auto;
   background-color: #ffffff;
 }
@@ -24,7 +27,7 @@ body {
 /* ===================== */
 .image-box {
   width: 100%;
-  height: 260px;          /* FIX tinggi gambar */
+  height: 260px;        /* tinggi gambar fix */
   overflow: hidden;
   background-color: #000;
 }
@@ -32,9 +35,19 @@ body {
 .image-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* AUTO CROP RAPI */
+  object-fit: cover;    /* gambar auto crop */
   object-position: center;
   display: block;
+}
+
+/* ===================== */
+/* SEO H1 TERSEMBUNYI */
+.seo-title {
+  font-size: 1px;
+  color: transparent;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
 }
 
 /* ===================== */
@@ -58,18 +71,24 @@ body {
   font-size: 18px;
   font-weight: bold;
   border-radius: 8px;
+  transition: 0.3s;
 }
 
 /* TOMBOL LOGIN */
-.login {
+.btn.login {
   background-color: #f1c40f;
   color: #000000;
 }
 
 /* TOMBOL DAFTAR */
-.daftar {
+.btn.daftar {
   background-color: #e74c3c;
   color: #ffffff;
+}
+
+/* HOVER EFEK */
+.btn:hover {
+  opacity: 0.9;
 }
 
 /* ===================== */
@@ -81,7 +100,6 @@ body {
 }
 
 .text-area p {
-  margin: 0;
   font-size: 13px;
   color: #555;
   line-height: 1.5;
