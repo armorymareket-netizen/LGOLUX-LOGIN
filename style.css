@@ -93,6 +93,7 @@ body {
   padding: 3px 12px;
   border-radius: 4px;
   font-weight: bold;
+  color: #fff;
 }
 
 /* TEXT AREA */
@@ -109,7 +110,7 @@ body {
   border-radius: 5px;
 }
 
-/* NAVIGASI FIXED BAWAH */
+/* FIXED NAVIGATION BAWAH - FIX UKURAN ICON */
 .fixed-nav {
   position: fixed;
   bottom: 0;
@@ -119,7 +120,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
-  border-top: 2px solid #0000ff; /* Garis Biru */
+  border-top: 2px solid #0000ff; /* Garis Biru Atas */
   z-index: 1000;
 }
 .nav-item {
@@ -129,14 +130,19 @@ body {
   align-items: center;
   flex: 1;
 }
+
+/* UKURAN ICON LOGO WA DLL DISINI */
 .nav-item img {
-  width: 22px;
+  width: 22px; /* Ukuran icon dibatasi agar tidak kebesaran */
   height: 22px;
   margin-bottom: 4px;
+  object-fit: contain;
 }
+
 .nav-item span {
-  color: #fff;
+  color: #ffffff;
   font-size: 10px;
   font-weight: bold;
 }
+
 .spacer { height: 85px; }
