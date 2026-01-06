@@ -1,87 +1,142 @@
-/* RESET & BASE */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+/* RESET DASAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: #ffffff;
   display: flex;
   justify-content: center;
 }
-.wrapper { width: 100%; max-width: 420px; background-color: #000; }
 
-/* LOGO */
-.header { padding: 10px; text-align: center; }
-.logo { width: 90px; height: auto; }
+.wrapper {
+  width: 100%;
+  max-width: 420px;
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+/* LOGO KECIL */
+.header {
+  padding: 10px;
+  text-align: center;
+}
+.logo {
+  width: 90px;
+  height: auto;
+}
 
 /* BANNER */
-.image-box img { width: 100%; display: block; }
+.image-box img {
+  width: 100%;
+  display: block;
+}
 
 /* RUNNING TEXT */
 .running-text {
   background-color: #111;
   color: #ff9500;
-  padding: 5px 0;
+  padding: 6px 0;
   font-size: 13px;
-  border-top: 1px solid #333;
   border-bottom: 1px solid #333;
 }
 
-/* BUTTONS */
+/* TOMBOL LOGIN & DAFTAR SEJAJAR */
 .button-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  padding: 15px;
+  gap: 12px;
+  padding: 20px 15px;
 }
 .btn {
   padding: 15px 0;
   text-align: center;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 8px;
   color: #000;
+  text-transform: uppercase;
 }
 .btn.login { background: linear-gradient(to bottom, #fff700, #ff8c00); }
 .btn.daftar { background: linear-gradient(to bottom, #ffeb3b, #f44336); }
 
-/* DETAIL TABLE */
-.detail-container { margin: 10px 15px; border: 1px solid #333; border-radius: 8px; overflow: hidden; }
+/* DETAIL TABEL */
+.detail-container {
+  margin: 10px 15px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .detail-header {
-  background: linear-gradient(to bottom, #333, #000);
+  background: linear-gradient(to bottom, #444, #000);
   color: #ff9500;
   text-align: center;
-  padding: 8px;
+  padding: 10px;
   font-weight: bold;
-  border-bottom: 1px solid #333;
 }
-.detail-table { width: 100%; border-collapse: collapse; }
-.detail-table td { padding: 10px; border-bottom: 1px solid #222; font-size: 14px; }
-.site-name { background-color: #ff0000; padding: 2px 10px; border-radius: 4px; font-weight: bold; }
+.detail-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.detail-table td {
+  padding: 12px;
+  border-bottom: 1px solid #222;
+  font-size: 14px;
+}
+.site-badge {
+  background-color: #ff0000;
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
 
-/* FOOTER NAV (FIXED) */
+/* TEXT AREA */
+.text-area {
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+.copyright-box {
+  margin-top: 15px;
+  background: #111;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* NAVIGASI FIXED BAWAH */
 .fixed-nav {
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 420px;
-  background-color: #050505;
+  background-color: #080808;
   display: flex;
   justify-content: space-around;
-  padding: 8px 0;
-  border-top: 2px solid #0000ff; /* Garis biru khas */
+  padding: 10px 0;
+  border-top: 2px solid #0000ff; /* Garis Biru */
   z-index: 1000;
 }
-.nav-link {
+.nav-item {
   text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex: 1;
 }
-.nav-link img { width: 22px; height: 22px; margin-bottom: 3px; }
-.nav-link span { color: #fff; font-size: 10px; }
-
-/* TEXT & COPYRIGHT */
-.text-area { padding: 20px; text-align: center; font-size: 13px; color: #888; }
-.copyright { margin-top: 15px; background: #111; padding: 8px; border-radius: 5px; }
+.nav-item img {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+}
+.nav-item span {
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+}
+.spacer { height: 85px; }
